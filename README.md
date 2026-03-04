@@ -92,14 +92,5 @@ CSS variables in `globals.css` control the full design system. Swap colors by ed
 - `--accent-coral` — secondary (default: #ff6b6b)
 - `--accent-teal` — tertiary (default: #00d9c0)
 
-## 🌐 Deploy to Vercel
-
-```bash
-npx vercel
-```
-
-Or push to GitHub and import at [vercel.com/new](https://vercel.com/new).
-
----
 
 Built with ❤️ using Next.js, Tailwind CSS, and Framer Motion.

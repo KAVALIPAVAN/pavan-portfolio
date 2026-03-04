@@ -1,6 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
-import { FiArrowRight, FiArrowDown } from "react-icons/fi";
+import { FiArrowRight} from "react-icons/fi";
 import { useTypewriter } from "@/hooks/useTypewriter";
 import { PERSONAL, STATS, TYPED_PHRASES } from "@/lib/data";
 
