@@ -180,7 +180,7 @@ export const PROJECTS = [
     description:
       "Built a production-ready ML pipeline to ingest, clean, and transform student data, train and evaluate CatBoost models,and produce reproducible artifacts for deployment. Implemented modular training, prediction, logging, and experiment tracking to enable reliable, scalable inference and model lifecycle management.",
     tags: ["Python", "CatBoost", "Pandas", "Scikit-learn", "MLflow"],
-    github: "https://github.com/KAVALIPAVAN/SMS_Spam_classifier",
+    github: "https://github.com/KAVALIPAVAN/mlproject",
     demo: "https://example.com",
     gradient: "linear-gradient(135deg,#1a1040,#0d1a30)",
   },
