@@ -1,6 +1,5 @@
 // ─── Portfolio Data ──────────────────────────────────────────────────────────
 // Replace this dummy data with your actual content.
-
 export const PERSONAL = {
   name: "Kavali Pavan",
   tagline: "I Build What Matters",
@@ -8,7 +7,7 @@ export const PERSONAL = {
   linkedin: "https://www.linkedin.com/in/kavali-pavan-598515274/",
   github: "https://github.com/KAVALIPAVAN/",
   twitter: "https://twitter.com/pavan_dev",
-  cvUrl: "/cv.pdf",
+  cvUrl: "/Pavan_resume.pdf",
   bio: `I'm a multidisciplinary engineer who lives at the crossroads of web development,
     data analytics, and machine learning. I love turning complex problems into
     beautiful, functional products that make a real impact.`,
