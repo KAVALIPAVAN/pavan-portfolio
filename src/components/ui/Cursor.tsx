@@ -19,6 +19,7 @@ export default function Cursor() {
       }
     };
 
+    let rafId: number;
     const animate = () => {
       fx += (mx - fx) * 0.12;
       fy += (my - fy) * 0.12;
@@ -26,25 +27,36 @@ export default function Cursor() {
         ringRef.current.style.left = fx - 16 + "px";
         ringRef.current.style.top = fy - 16 + "px";
       }
-      requestAnimationFrame(animate);
+      rafId = requestAnimationFrame(animate);
     };
 
     document.addEventListener("mousemove", move);
     animate();
 
     const hoverEls = document.querySelectorAll("a, button, .project-card, .skill-pill, .tech-item");
+    const enterHandler = () => {
+      if (dotRef.current) dotRef.current.style.transform = "scale(2.5)";
+      if (ringRef.current) Object.assign(ringRef.current.style, { transform: "scale(1.5)", opacity: "0.2" });
+    };
+
+    const leaveHandler = () => {
+      if (dotRef.current) dotRef.current.style.transform = "scale(1)";
+      if (ringRef.current) Object.assign(ringRef.current.style, { transform: "scale(1)", opacity: "0.5" });
+    };
+
     hoverEls.forEach((el) => {
-      el.addEventListener("mouseenter", () => {
-        dotRef.current && (dotRef.current.style.transform = "scale(2.5)");
-        ringRef.current && Object.assign(ringRef.current.style, { transform: "scale(1.5)", opacity: "0.2" });
-      });
-      el.addEventListener("mouseleave", () => {
-        dotRef.current && (dotRef.current.style.transform = "scale(1)");
-        ringRef.current && Object.assign(ringRef.current.style, { transform: "scale(1)", opacity: "0.5" });
-      });
+      el.addEventListener("mouseenter", enterHandler);
+      el.addEventListener("mouseleave", leaveHandler);
     });
 
-    return () => document.removeEventListener("mousemove", move);
+    return () => {
+      document.removeEventListener("mousemove", move);
+      hoverEls.forEach((el) => {
+        el.removeEventListener("mouseenter", enterHandler);
+        el.removeEventListener("mouseleave", leaveHandler);
+      });
+      if (rafId) cancelAnimationFrame(rafId);
+    };
   }, []);
 
   return (
