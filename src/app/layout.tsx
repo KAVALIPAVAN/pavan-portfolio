@@ -47,6 +47,11 @@ export const metadata: Metadata = {
     description: "Portfolio of a full-stack developer and ML engineer.",
     type: "website",
   },
+  icons: {
+    icon: "/fav.png",
+    shortcut: "/fav.png",
+    apple: "/fav.png",
+  },
 };
 
 export default function RootLayout({
