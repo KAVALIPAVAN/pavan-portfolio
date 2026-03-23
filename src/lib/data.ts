@@ -22,10 +22,18 @@ export const STATS = [
   { num: "4+", label: "Tech Stacks" },
 ];
 
+// export const TYPED_PHRASES = [
+//   "Web Developer",
+//   "Data Scientist",
+//   "ML Engineer",
+//   "Data Analyst",
+//   "Problem Solver",
+// ];
+
 export const TYPED_PHRASES = [
-  "Web Developer",
-  "Data Scientist",
-  "ML Engineer",
+  "Full Stack Developer",
+  "AI / ML Engineer",
+  "Generative AI Developer",
   "Data Analyst",
   "Problem Solver",
 ];
@@ -85,7 +93,7 @@ export const TECH_STACK = [
   { name: "MongoDB", icon: "🍃" },
   { name: "Docker", icon: "🐋" },
   // { name: "AWS", icon: "☁️" },
-  // { name: "PyTorch", icon: "🧠" },
+  { name: "PyTorch", icon: "🧠" },
   { name: "TensorFlow", icon: "🔭" },
   { name: "Tailwind", icon: "🏗️" },
   { name: "Pandas", icon: "📊" },
