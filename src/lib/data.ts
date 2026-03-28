@@ -40,6 +40,31 @@ export const TYPED_PHRASES = [
 
 export const SKILLS = [
   {
+    icon: "🤖",
+    title: "Generative AI",
+    pills: [
+      "LLMs", "Prompt Engineering", "RAG (Retrieval-Augmented Generation)",
+      "LangChain", "Vector Databases", "Embeddings", "Ollama (Local LLMs)", "Hugging Face",
+      "Fine-tuning (LoRA / PEFT)", "AI Agents", "Chatbot Development"
+    ],
+  },
+    {
+    icon: "🧠",
+    title: "Machine Learning",
+    pills: [
+      "Scikit-learn", "TensorFlow", "PyTorch", "Keras",
+      "XGBoost", "Transformers", "MLflow",
+    ],
+  },
+    {
+    icon: "📊",
+    title: "Data Analytics",
+    pills: [
+      "Python (Pandas)", "NumPy", "Power BI", "Tableau",
+      "SQL", "Excel ", "Matplotlib", "Seaborn", "Plotly",
+    ],
+  },
+  {
     icon: "🎨",
     title: "Frontend Development",
     pills: [
@@ -53,22 +78,6 @@ export const SKILLS = [
     pills: [
       "Node.js", "Python", "Express.js",
       "MYSQL", "PostgreSQL", "MongoDB", "REST APIs",
-    ],
-  },
-  {
-    icon: "📊",
-    title: "Data Analytics",
-    pills: [
-      "Python (Pandas)", "NumPy", "Power BI", "Tableau",
-      "SQL", "Excel ", "Matplotlib", "Seaborn", "Plotly",
-    ],
-  },
-  {
-    icon: "🧠",
-    title: "Machine Learning",
-    pills: [
-      "Scikit-learn", "TensorFlow", "PyTorch", "Keras",
-      "XGBoost", "Transformers", "MLflow",
     ],
   },
   {
@@ -180,10 +189,22 @@ export const TECH_STACK = [
 // ];
 
 export const PROJECTS = [
-  {
+    {
     num: "/01",
-    label: "ML",
+    label: "GenAI",
     featured: true,
+    title: "Adaptive AI Interviewer",
+    description:
+      "Built a full-stack mock interview platform using React, FastAPI, and a locally-hosted LLM via Ollama, featuring JWT authentication, adaptive chain-of-thought questioning, real-time competency tracking, and persistent session history stored in MongoDB.",
+    tags: ["React", "FastAPI", "Python", "Ollama", "MongoDB", "JWT", "RAG", "LLM", "Vite", "REST API"],
+    github: "https://github.com/KAVALIPAVAN/Adaptive-AI-Interviewer",
+    demo: "https://example.com",
+    gradient: "linear-gradient(135deg,#201008,#2a1530)",
+  },
+  {
+    num: "/02",
+    label: "ML",
+    featured: false,
     title: "End-to-End Student Performance Prediction Pipeline (CatBoost)",
     description:
       "Built a production-ready ML pipeline to ingest, clean, and transform student data, train and evaluate CatBoost models,and produce reproducible artifacts for deployment. Implemented modular training, prediction, logging, and experiment tracking to enable reliable, scalable inference and model lifecycle management.",
@@ -194,7 +215,7 @@ export const PROJECTS = [
   },
 
   {
-    num: "/02",
+    num: "/03",
     label: "NLP",
     featured: false,
     title: "SMS Spam Classification Web App",
@@ -206,18 +227,18 @@ export const PROJECTS = [
     gradient: "linear-gradient(135deg,#0d2010,#1a2030)",
   },
 
-  {
-    num: "/03",
-    label: "DL",
-    featured: false,
-    title: "Deep Learning Face Mask Classifier",
-    description:
-      "Developed a CNN-based face mask detection model using TensorFlow with data augmentation.",
-    tags: ["Python", "TensorFlow", "CNN", "NumPy"],
-    github: "https://github.com/KAVALIPAVAN/Mask_detect_cnn",
-    demo: "https://example.com",
-    gradient: "linear-gradient(135deg,#201008,#2a1530)",
-  },
+  // {
+  //   num: "/03",
+  //   label: "DL",
+  //   featured: false,
+  //   title: "Deep Learning Face Mask Classifier",
+  //   description:
+  //     "Developed a CNN-based face mask detection model using TensorFlow with data augmentation.",
+  //   tags: ["Python", "TensorFlow", "CNN", "NumPy"],
+  //   github: "https://github.com/KAVALIPAVAN/Mask_detect_cnn",
+  //   demo: "https://example.com",
+  //   gradient: "linear-gradient(135deg,#201008,#2a1530)",
+  // },
 
   {
     num: "/04",
